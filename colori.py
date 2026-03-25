@@ -20,12 +20,20 @@ colori_molt = {
 
 colori_tol = {"Oro (±5%)": "5%", "Argento (±10%)": "10%", "Marrone (±1%)": "1%"}
 
-# 2. Mappa dei colori CSS per il disegno (nomi standard o codici esadecimali)
+# Mappa dei colori CSS aggiornata con i nomi esatti dei menu
 mappa_colori_css = {
+    # Cifre (Banda 1 e 2)
     "Nero": "black", "Marrone": "#8B4513", "Rosso": "red", "Arancio": "orange",
     "Giallo": "yellow", "Verde": "green", "Blu": "blue", "Viola": "purple",
-    "Grigio": "gray", "Bianco": "white", "Oro (x0.1)": "#FFD700", "Argento (x0.01)": "#C0C0C0",
-    "Oro (±5%)": "#FFD700", "Argento (±10%)": "#C0C0C0"
+    "Grigio": "gray", "Bianco": "white",
+
+    # Moltiplicatori (Banda 3) - Devono corrispondere a colori_molt.keys()
+    "Nero (x1)": "black", "Marrone (x10)": "#8B4513", "Rosso (x100)": "red",
+    "Arancio (x1k)": "orange", "Giallo (x10k)": "yellow", "Verde (x100k)": "green",
+    "Blu (x1M)": "blue", "Oro (x0.1)": "#FFD700", "Argento (x0.01)": "#C0C0C0",
+
+    # Tolleranze (Banda 4) - Devono corrispondere a colori_tol.keys()
+    "Oro (±5%)": "#FFD700", "Argento (±10%)": "#C0C0C0", "Marrone (±1%)": "#8B4513"
 }
 
 # 3. Interfaccia di selezione (Colonne)
