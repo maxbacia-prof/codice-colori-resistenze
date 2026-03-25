@@ -100,6 +100,6 @@ html_resistenza = f"""
 """
 
 # Rendering dell'HTML in Streamlit
-st.markdown("<h1>Test HTML</h1>", unsafe_allow_html=True)
+st.markdown(html_resistenza, unsafe_allow_html=True)
 
 st.caption("Nota: I colori sono indicativi e possono variare in base allo schermo.")
